@@ -31,28 +31,27 @@ export class News extends Component {
         document.title = `${this.props.category} - Insight Daily`;
     }
 
-    // Helper method to fetch via allorigins proxy
+    // Helper method to fetch via corsproxy.io
     fetchWithProxy = async (targetUrl) => {
-        const proxyUrl = 'https://api.allorigins.win/get?url=';
-        const encodedUrl = encodeURIComponent(targetUrl);
+        const proxyUrl = 'https://corsproxy.io/?';
+        const proxiedUrl = proxyUrl + encodeURIComponent(targetUrl);
 
-        const response = await fetch(proxyUrl + encodedUrl);
+        const response = await fetch(proxiedUrl);
         if (!response.ok) {
             throw new Error(`Network response was not ok (${response.status})`);
         }
         const data = await response.json();
-        // allorigins returns the actual API response as a string in data.contents
-        return JSON.parse(data.contents);
+        return data;
     }
 
     async updateNews() {
         try {
             const url = `https://newsapi.org/v2/everything?q=${this.props.category}&sortBy=publishedAt&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-            console.log('Fetching from URL:', url);
+            console.log('Fetching from URL (proxied):', url);
             this.setState({ loading: true, error: null });
-            
+
             let parsedData = await this.fetchWithProxy(url);
-            
+
             if (parsedData.status === 'error') {
                 throw new Error(parsedData.message || 'Error fetching news');
             }
@@ -95,7 +94,7 @@ export class News extends Component {
             const url = `https://newsapi.org/v2/everything?q=${this.props.category}&sortBy=publishedAt&apiKey=${this.props.apiKey}&page=${nextPage}&pageSize=${this.props.pageSize}`;
             
             let parsedData = await this.fetchWithProxy(url);
-            
+
             if (parsedData.status === 'error') {
                 throw new Error(parsedData.message || 'Error fetching more news');
             }
@@ -119,7 +118,7 @@ export class News extends Component {
 
     render() {
         const { articles = [], error, hasMore } = this.state;
-        
+
         return (
             <>
                 <h1 className="text-center" style={{ margin: '35px 0px' }}>
