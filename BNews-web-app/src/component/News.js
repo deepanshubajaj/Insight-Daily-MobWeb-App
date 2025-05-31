@@ -35,7 +35,7 @@ export class News extends Component {
             const newsApiUrl = `https://newsapi.org/v2/everything?q=${this.props.category}&sortBy=publishedAt&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
             const allOriginsUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(newsApiUrl)}`;
             
-            console.log('Fetching from URL:', newsApiUrl);
+            //console.log('Fetching from URL:', newsApiUrl);
             this.setState({ loading: true, error: null });
             
             let response = await fetch(allOriginsUrl);
