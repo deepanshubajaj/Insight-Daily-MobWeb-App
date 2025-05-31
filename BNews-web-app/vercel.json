@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/logo192.png",
+      "dest": "/logo192.png"
+    },
+    {
+      "src": "/logo512.png",
+      "dest": "/logo512.png"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/manifest.json"
+    },
+    {
+      "src": "/robots.txt",
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_KEY": "@react_app_api_key",
+    "REACT_APP_FACEBOOK": "@react_app_facebook",
+    "REACT_APP_INSTAGRAM": "@react_app_instagram",
+    "REACT_APP_LINKEDIN": "@react_app_linkedin",
+    "REACT_APP_GITHUB": "@react_app_github",
+    "REACT_APP_TWITTER": "@react_app_twitter",
+    "REACT_APP_CREATOR_NAME": "@react_app_creator_name"
+  }
+}
