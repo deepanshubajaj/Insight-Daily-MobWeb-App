@@ -32,12 +32,21 @@ export class News extends Component {
 
     async updateNews() {
         try {
-            const url = `https://newsapi.org/v2/everything?q=${this.props.category}&sortBy=publishedAt&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-            console.log('Fetching from URL:', url);
+            const newsApiUrl = `https://newsapi.org/v2/everything?q=${this.props.category}&sortBy=publishedAt&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+            const allOriginsUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(newsApiUrl)}`;
+            
+            console.log('Fetching from URL:', newsApiUrl);
             this.setState({ loading: true, error: null });
             
-            let data = await fetch(url);
-            let parsedData = await data.json();
+            let response = await fetch(allOriginsUrl);
+            let result = await response.json();
+            
+            if (!response.ok) {
+                throw new Error('Failed to fetch news');
+            }
+
+            // Parse the contents from allOrigins response
+            const parsedData = JSON.parse(result.contents);
             
             if (parsedData.status === 'error') {
                 throw new Error(parsedData.message || 'Error fetching news');
@@ -78,10 +87,18 @@ export class News extends Component {
     fetchMoreData = async () => {
         try {
             const nextPage = this.state.page + 1;
-            const url = `https://newsapi.org/v2/everything?q=${this.props.category}&sortBy=publishedAt&apiKey=${this.props.apiKey}&page=${nextPage}&pageSize=${this.props.pageSize}`;
+            const newsApiUrl = `https://newsapi.org/v2/everything?q=${this.props.category}&sortBy=publishedAt&apiKey=${this.props.apiKey}&page=${nextPage}&pageSize=${this.props.pageSize}`;
+            const allOriginsUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(newsApiUrl)}`;
             
-            let data = await fetch(url);
-            let parsedData = await data.json();
+            let response = await fetch(allOriginsUrl);
+            let result = await response.json();
+            
+            if (!response.ok) {
+                throw new Error('Failed to fetch more news');
+            }
+
+            // Parse the contents from allOrigins response
+            const parsedData = JSON.parse(result.contents);
             
             if (parsedData.status === 'error') {
                 throw new Error(parsedData.message || 'Error fetching more news');
