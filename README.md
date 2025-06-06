@@ -316,6 +316,48 @@ axios.get(`https://newsapi.org/v2/top-headlines?category=technology&apiKey=${API
   *Snapshots of the Running Application*
 </p>
 
+##
+
+2. Snapshots in Mobile App:
+
+<p align="center">
+  <img src="ProjectOutputs/Mobile/Snapshots/im1.jpg" alt="Splash Screen 1" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im3.jpg" alt="Splash Screen 2" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im2.jpg" alt="Splash Screen 3" width="30%" />
+</p>
+
+<p align="center">
+  *Splash screen displayed upon app launch*
+</p>
+
+##
+
+<p align="center">
+  <img src="ProjectOutputs/Mobile/Snapshots/im4.jpg" alt="im4" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im5.jpg" alt="im5" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im6.jpg" alt="im6" width="30%" />
+</p>
+
+##
+
+<p align="center">
+  <img src="ProjectOutputs/Mobile/Snapshots/im7.jpg" alt="im7" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im8.jpg" alt="im8" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im9.jpg" alt="im9" width="30%" />
+</p>
+
+##
+
+<p align="center">
+  <img src="ProjectOutputs/Mobile/Snapshots/im10.jpg" alt="im10" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im11.jpg" alt="im11" width="30%" />
+  <img src="ProjectOutputs/Mobile/Snapshots/im12.jpg" alt="im12" width="30%" />
+</p>
+
+<p align="center">
+  *Snapshots of the Running Application*
+</p>
+
 ---
 
 ## 🚀 Video Demo
@@ -330,13 +372,15 @@ Here’s a short video showcasing the app's functionality:
 
 2. Working in Mobile:
 
-[Watch the Working Demo](https://github.com/user-attachments/assets/0d1ddaeb-e092-4ec7-b391-23646bda1f88)
+<p align="center">
+  <img src="ProjectOutputs/Mobile/WorkingVideo/WorkingVideo.gif" alt="Working App" width="30%" />
+</p>
 
 ##
 
 ➤ <a href="ProjectOutputs/Web/WorkingVideo/WorkingVideo.mp4">🎥 Watch Working Video in Web</a>
 
-➤ <a href="ProjectOutputs/WorkingVideos/WorkingVideo.mp4">🎥 Watch Working Video in Mobile</a>
+➤ <a href="ProjectOutputs/Mobile/WorkingVideos/WorkingVideo.mov">🎥 Watch Working Video in Mobile</a>
 
 ---
 
