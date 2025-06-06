@@ -1,5 +1,3 @@
-# Insight-Daily-MobWeb-App
-Insight-Daily-MobWeb App
 <h1 align="center">📰 Insight Daily - Your Customizable News Web & Mobile App</h1>
 
 <p align="center">
