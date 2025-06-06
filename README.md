@@ -217,7 +217,7 @@ export const ENV = {
 
 ### 📰 NewsAPI.org
 
-<img src="ProjectOutputs/Snapshots/newsApi.png" align="right" width="21%"/>
+<img src="ProjectOutputs/Others/newsApi.png" align="right" width="21%"/>
 
 - **Source**: [https://newsapi.org](https://newsapi.org)
 - **Purpose**: Fetches real-time news articles based on category, search keyword, and region.
@@ -322,11 +322,21 @@ axios.get(`https://newsapi.org/v2/top-headlines?category=technology&apiKey=${API
 
 Here’s a short video showcasing the app's functionality:
 
-[Watch the Working Demo](https://github.com/user-attachments/assets/928202a6-33a9-4238-b5bc-0296ab213eb9)
+1. Working in Web:
+
+[Watch the Working Demo](https://github.com/user-attachments/assets/0d1ddaeb-e092-4ec7-b391-23646bda1f88)
 
 ##
 
-➤ <a href="ProjectOutputs/WorkingVideos/WorkingVideo.mp4">🎥 Watch Working Video</a>
+2. Working in Mobile:
+
+[Watch the Working Demo](https://github.com/user-attachments/assets/0d1ddaeb-e092-4ec7-b391-23646bda1f88)
+
+##
+
+➤ <a href="ProjectOutputs/Web/WorkingVideo/WorkingVideo.mp4">🎥 Watch Working Video in Web</a>
+
+➤ <a href="ProjectOutputs/WorkingVideos/WorkingVideo.mp4">🎥 Watch Working Video in Mobile</a>
 
 ---
 
