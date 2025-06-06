@@ -233,7 +233,7 @@ axios.get(`https://newsapi.org/v2/top-headlines?category=technology&apiKey=${API
 ## 🖼️ App Icon
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/ReportrixLogo.png" alt="Icon1" width="40%"  />
+  <img src="ProjectOutputs/Web/Snapshots/Icon.png" alt="Icon1" width="40%"  />
 </p>
 
 <p align="center">
@@ -247,127 +247,67 @@ axios.get(`https://newsapi.org/v2/top-headlines?category=technology&apiKey=${API
 1. Snapshots in Web App:
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im1.png" alt="Image1"  />
+  <img src="ProjectOutputs/Web/Snapshots/im1.png" alt="Image1"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im2.png" alt="Image2"  />
+  <img src="ProjectOutputs/Web/Snapshots/im2.png" alt="Image2"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im3.png" alt="Image3"  />
+  <img src="ProjectOutputs/Web/Snapshots/im3.png" alt="Image3"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im4.png" alt="Image4"  />
+  <img src="ProjectOutputs/Web/Snapshots/im4.png" alt="Image4"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im5.png" alt="Image5"  />
+  <img src="ProjectOutputs/Web/Snapshots/im5.png" alt="Image5"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im6.png" alt="Image6"  />
+  <img src="ProjectOutputs/Web/Snapshots/im6.png" alt="Image6"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im7.png" alt="Image7"  />
+  <img src="ProjectOutputs/Web/Snapshots/im7.png" alt="Image7"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im8.png" alt="Image8"  />
+  <img src="ProjectOutputs/Web/Snapshots/im8.png" alt="Image8"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im9.png" alt="Image9"  />
+  <img src="ProjectOutputs/Web/Snapshots/im9.png" alt="Image9"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im10.png" alt="Image10"  />
+  <img src="ProjectOutputs/Web/Snapshots/im10.png" alt="Image10"  />
 </p>
 
 ##
 
 <p align="center">
-  <img src="ProjectOutputs/Snapshots/im11.png" alt="Image11"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im12.png" alt="Image12"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im13.png" alt="Image13"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im14.png" alt="Image14"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im15.png" alt="Image15"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im16.png" alt="Image16"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im17.png" alt="Image17"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im18.png" alt="Image18"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im19.png" alt="Image19"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im20.png" alt="Image20"  />
-</p>
-
-##
-
-<p align="center">
-  <img src="ProjectOutputs/Snapshots/im21.png" alt="Image21"  />
+  <img src="ProjectOutputs/Web/Snapshots/im11.png" alt="Image11"  />
 </p>
 
 ##
